@@ -30,6 +30,104 @@
 
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
+
+
+
+
+    
+  {% assign collection_filters = collection.metafields.custom.cfilter %}
+
+  <div class="custom-filters" data-filters='{{ collection_filters }}'>
+    <h3>Custom Filters</h3>
+  </div>
+
+  <!-- Laten we ervan uitgaan dat je een lijst hebt met producten, en we gaan hun filterdata aan elk product toevoegen -->
+  {% comment %} <div id="products">
+    {% for product in collection.products %}
+      <div class="product" data-pfilter='{{ product.metafields.custom.pfilter }}'>        
+      </div>
+    {% endfor %}
+  </div> {% endcomment %}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Haal de JSON data op uit het data-attribute
+      const filtersContainer = document.querySelector('.custom-filters');
+      const filtersData = JSON.parse(filtersContainer.getAttribute('data-filters'));
+  
+      // Haal alle producten op
+      const productElements = document.querySelectorAll('.product');
+      const products = Array.from(productElements).map(product => {
+        return JSON.parse(product.getAttribute('data-pfilter'));
+      });
+  
+      // Controleer of de JSON correct is opgehaald
+      if (filtersData && filtersData.filters) {
+        filtersData.filters.forEach(filter => {
+          const filterWrapper = document.createElement('div');
+          filterWrapper.classList.add('filter');
+  
+          // Maak een label voor het filter
+          const label = document.createElement('label');
+          label.textContent = filter.title;
+          label.setAttribute('for', filter.variable);
+          filterWrapper.appendChild(label);
+  
+          // Controleer het type filter en genereer de juiste input
+          switch (filter.type) {
+            case 'range':
+              const rangeInput = document.createElement('input');
+              rangeInput.setAttribute('type', 'range');
+              rangeInput.setAttribute('id', filter.variable);
+              rangeInput.setAttribute('name', filter.variable);
+              rangeInput.setAttribute('min', filter.values.min);
+              rangeInput.setAttribute('max', filter.values.max);
+              rangeInput.setAttribute('step', '1');
+              filterWrapper.appendChild(rangeInput);
+              break;
+  
+            case 'select':
+              const select = document.createElement('select');
+              select.setAttribute('id', filter.variable);
+              select.setAttribute('name', filter.variable);
+  
+              filter.values.forEach(optionValue => {
+                const option = document.createElement('option');
+                option.setAttribute('value', optionValue);
+                
+                // Vergelijk de waarde, let op hoofdletters en spaties
+                const count = products.filter(product => {
+                  const productFilterValue = product.filters[filter.variable];
+                  return productFilterValue && productFilterValue.toLowerCase() === optionValue.toLowerCase();
+                }).length;
+  
+                option.textContent = `${optionValue} (${count})`;
+                select.appendChild(option);
+              });
+  
+              filterWrapper.appendChild(select);
+              break;
+  
+            default:
+              console.warn(`Unsupported filter type: ${filter.type}`);
+          }
+  
+          // Voeg het filter toe aan de container
+          filtersContainer.appendChild(filterWrapper);
+        });
+      } else {
+        console.error('Geen filters gevonden in de JSON');
+      }
+    });
+  </script>  
+
+  
+
+    
+
+    
+
+
     <facet-filters-form class="facets small-hide">
       <form
         id="FacetFiltersForm"
