@@ -1,0 +1,150 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Boekenbundel Horeca",
+            "heading_size": "hxxl"
+          }
+        },
+        "text_QweFph": {
+          "type": "text",
+          "settings": {
+            "text": "Boeken - Methodiek - Events",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Ontdek onze collectie",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "Bekijk events",
+            "button_link_2": "shopify://blogs/news",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text_QweFph",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/presentatieswouterverkerk-scaled.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "zoom-in",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Populaire producten",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_8wA78A": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_MJ8n7H": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet Wouter Verkerk",
+            "heading_size": "h1"
+          }
+        },
+        "text_cEqtAr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wouter Verkerk is een van de meest gevraagde sprekers op het gebied van Horeca en Gastvrijheid. Hij is auteur van verschillende boeken over het vak en schrijft columns voor verschillende media.</p><p>Lezingen van Wouter worden veel geboekt voor ondernemerscongressen,  bijeenkomsten van winkeliers en horeca-avonden. </p><p>Met veel plezier sturen we een informatiepakket toe! </p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MJ8n7H",
+        "text_cEqtAr"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/5f20c1e0e5294591930caae6fe0cc929d25dddb3.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "zoom-in",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_RAVdcB": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_collection",
+    "image_with_text_8wA78A",
+    "featured_blog_RAVdcB"
+  ]
+}
