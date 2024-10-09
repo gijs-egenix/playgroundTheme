@@ -42,12 +42,12 @@
   </div>
 
   <!-- Laten we ervan uitgaan dat je een lijst hebt met producten, en we gaan hun filterdata aan elk product toevoegen -->
-  {% comment %} <div id="products">
+  <div id="products">
     {% for product in collection.products %}
       <div class="product" data-pfilter='{{ product.metafields.custom.pfilter }}'>        
       </div>
     {% endfor %}
-  </div> {% endcomment %}
+  </div>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
