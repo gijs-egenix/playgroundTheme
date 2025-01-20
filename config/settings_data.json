@@ -1,16 +1,17 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
+    "logo": "shopify://shop_images/logo-pngpng-nieuw_20180416095242.png",
     "logo_width": 90,
-    "favicon": "shopify://shop_images/favicon-32x32.webp",
+    "favicon": "shopify://shop_images/logo-pngpng-nieuw_20180416095242.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -141,9 +142,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -213,13 +212,24 @@
       },
       "scheme-df0fb5f8-d0a7-425f-a7b4-e64c385a6a60": {
         "settings": {
-          "background": "#012949",
+          "background": "#6fc241",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#012949",
           "button_label": "#ffffff",
           "secondary_button_label": "#ffffff",
           "shadow": "#012949"
+        }
+      },
+      "scheme-3b2e0772-5671-4f60-abec-41610fedd99a": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#6fc241",
+          "shadow": "#121212"
         }
       }
     }
