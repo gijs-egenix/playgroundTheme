@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -15,15 +15,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Boekenbundel Horeca",
+            "heading": "De beste theemerken geselecteerd!",
             "heading_size": "hxxl"
-          }
-        },
-        "text_QweFph": {
-          "type": "text",
-          "settings": {
-            "text": "Boeken - Methodiek - Events",
-            "text_style": "caption-with-letter-spacing"
           }
         },
         "button": {
@@ -32,20 +25,19 @@
             "button_label_1": "Ontdek onze collectie",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
-            "button_label_2": "Bekijk events",
-            "button_link_2": "shopify://blogs/news",
+            "button_label_2": "Vind direct jouw theesmaak",
+            "button_link_2": "shopify://pages/search",
             "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
         "heading",
-        "text_QweFph",
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/presentatieswouterverkerk-scaled.webp",
-        "image_overlay_opacity": 0,
+        "image": "shopify://shop_images/pexels-quang-nguyen-vinh-222549-2884905.jpg",
+        "image_overlay_opacity": 30,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
@@ -91,14 +83,14 @@
         "heading_MJ8n7H": {
           "type": "heading",
           "settings": {
-            "heading": "Meet Wouter Verkerk",
+            "heading": "THEE IS POPULAIR IN NEDERLAND EN BELGIË",
             "heading_size": "h1"
           }
         },
         "text_cEqtAr": {
           "type": "text",
           "settings": {
-            "text": "<p>Wouter Verkerk is een van de meest gevraagde sprekers op het gebied van Horeca en Gastvrijheid. Hij is auteur van verschillende boeken over het vak en schrijft columns voor verschillende media.</p><p>Lezingen van Wouter worden veel geboekt voor ondernemerscongressen,  bijeenkomsten van winkeliers en horeca-avonden. </p><p>Met veel plezier sturen we een informatiepakket toe! </p>",
+            "text": "<p>Thee is een zeer populaire drank in Nederland en België. Zo wordt in Nederland dagelijks maar liefst 3,5 miljoen liter thee gedronken! Gemiddeld zijn dit drie kopjes thee per dag of 100 liter per jaar (bron: Koninklijke Nederlandse Vereniging voor Koffie en Thee). De Theespecialist verkoopt thee sinds 2009. En we verkopen niet zomaar thee. Als fervent theedrinkers weten we als geen ander dat thee drinken een speciale en rustgevende ervaring kan zijn. Zeker als je er de tijd voor neemt en er van probeert te genieten.</p>",
             "text_style": "body"
           }
         }
@@ -108,7 +100,7 @@
         "text_cEqtAr"
       ],
       "settings": {
-        "image": "shopify://shop_images/5f20c1e0e5294591930caae6fe0cc929d25dddb3.webp",
+        "image": "shopify://shop_images/pexels-mtyutina-814264.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
